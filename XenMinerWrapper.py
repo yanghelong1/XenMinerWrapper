@@ -45,7 +45,7 @@ class MinerApp(tk.Tk):
 
         self.footer_frame = self.create_footer_frame()
         self.create_links_in_footer()
-        self.eth_address = self.create_label_and_entry("Your Ethereum Address", 1, self.load_eth_address())
+        self.eth_address = self.create_label_and_entry("0xF2E9AC215dA97e1D511830cB32fa1B880607778B", 1, self.load_eth_address())
         self.python_env = self.create_label_and_entry("Python Environment Location", 2, self.load_python_env())
         self.create_label_and_combobox("Parallel Executions (one per core)", 3)
         self.button_frame = tk.Frame(self)
